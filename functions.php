@@ -4,7 +4,7 @@ function db_connect(){
     
     try 
     {
-        $db = new PDO('mysql:host=localhost;dbname=dwwm', "root", "");
+        $db = new PDO('mysql:host=localhost;dbname=blog_sport', "root", "");
         return $db;
     } 
     catch(PDOException $e) 

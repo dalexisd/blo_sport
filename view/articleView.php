@@ -1,4 +1,4 @@
-<?php include 'partials/header.php';?>
+<?php include 'header.php';?>
 
 
 <div class="row">
@@ -9,7 +9,7 @@
           <span class="card-title">Card Title</span>
         </div>
         <div class="card-content">
-        <span><?php echo $users['lastname'] . " " . $users'firstname']?></span>
+        <span><?php echo $articles['title'] . " " . $articles['date'] . " " . $articles['content']?></span>
         </div>
         <div class="card-action">
           <a href="#"></a>
@@ -19,4 +19,4 @@
   </div>
             
 
-<?php include 'partials/footer.php';?>
+<?php include 'footer.php';?>
