@@ -12,7 +12,7 @@
         <span><?php echo $articles['title'] . " " . $articles['date'] . " " . $articles['content']?></span>
         </div>
         <div class="card-action">
-          <a href="#"></a>
+          <a href="articleView.php?id=<?php echo $articles['id'];?>"></a>
         </div>
       </div>
     </div>

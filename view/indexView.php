@@ -4,16 +4,57 @@ include 'view/partials/footer.php';
 
 ?>
 <body>
-    <div class= "container text-ce">
-      <h1>BLOG SPORT</h1>
+<h1 class="text-center">BLOG SPORT</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="row">
+      
+      <ul class="navbar-nav">
+        
+        <div class="col-6">
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="indexView.php">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Compétitions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newsView.php">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sports</a>
+                </li>
+        </div>
+
+        <div class="col-6 text-right alignright">
+                <li class="nav-item text-justify-right">
+                  <a class="nav-link" href="#">Sign in <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item text-align-right">
+                  <a class="nav-link" href="#">Register <span class="sr-only">(current)</span></a>
+                </li>
+                
+        </div>
+      </ul>  
+    </div>
+    
+  </div>
+  
+</nav>
+    <div class= "container text-center">
   <?php foreach ($articles as $article){ ?>
 
       <div class="card" style="width: 18rem;">
-      <img src="../images/mikeTyson.jpg" class="card-img-top" alt="photo_portrait_mike">
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $article["title"]?></h5>
-        <p class="card-text"><?php echo $article["content"]?></p>
-        <span class="btn btn-primary"><a href="articles.php">Voir plus</a></span>
+          <img src="images/miketyson.png" class="card-img-top" alt="photo_portrait_mike">
+          <div class="card-body">
+          <h5 class="card-title"><?php echo $article["title"]?></h5>
+          <p class="card-text"><?php echo $article["content"]?></p>
+          <span class="btn btn-primary"><a href="articles.php">Voir plus</a></span>
+      </div>
       </div>
 </div>
 <?php } ?>
