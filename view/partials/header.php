@@ -8,6 +8,4 @@
     <link rel="stylesheet" href="styles.css">
     <title>Blog_sport</title>
 
-
-
 </head>

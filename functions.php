@@ -55,3 +55,11 @@ function getUsersInfos($id){
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
+
+function addUser ($lastname, $firstname, $pseudo, $email, $password){
+    $con = db_connect ();
+    $query = "INSERT INTO users (id, lastname, firstname, pseudo, email, password) VALUES ('null', '$lastname', '$firstname', '$pseudo', '$email', '$password')";
+    $con->query($query);
+
+
+}
