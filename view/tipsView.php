@@ -3,4 +3,4 @@
 include 'partials/header.php';
 include 'navView.php';
 ?>
-<h3 class="text-center">COMPETITIONS</h3>
+<h1 class="text-center">Tips</h1>

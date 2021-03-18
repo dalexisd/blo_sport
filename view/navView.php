@@ -10,16 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link"  href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">compétitions</a>
+          <a class="nav-link" href="compet.php">compétitions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="news.php">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tips</a>
+          <a class="nav-link" href="tips.php">Tips</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,6 +29,21 @@
             <li><a class="dropdown-item" href="#">Basket</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+          </ul>
+          <ul class="navbar-nav">
+          
+                <li class="nav-item d-flex justify-content-end">
+                <a class="nav-link" href="login.php">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.php">Sign up</a>
+              </li>
+          </ul>
+          
+        
+
+
           </ul>
         </li>
       </ul>

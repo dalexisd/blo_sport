@@ -1,13 +1,7 @@
 <?php 
-include 'view/partials/header.php';
-include 'functions.php';
+require 'functions.php';
 
-$user = getUsersList();
+$users = getUsersList();
 $articles = getArticlesList();
-
-
 require 'view/articleView.php';
-    
-
-
-?>
+   

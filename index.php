@@ -7,4 +7,4 @@ $articles = getArticlesList();
 require 'view/indexView.php';
 
 
- 
+

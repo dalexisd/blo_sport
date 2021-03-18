@@ -2,7 +2,6 @@
 include 'partials/header.php';
 include 'navView.php';
 
-
 ?>
 
 <body>
@@ -14,7 +13,7 @@ include 'navView.php';
           <div class="card-body">
           <h5 class="card-title"><?php echo $article["title"]?></h5>
           <p class="card-text"><?php echo $article["content"]?></p>
-          <span class="btn btn-primary"><a href="view/articleView.php">Voir plus</a></span>
+          <span class="btn btn-primary"><a href="activArticles.php"> Voir plus</a></span>
       </div>
       </div>
 

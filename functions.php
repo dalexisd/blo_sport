@@ -56,10 +56,26 @@ function getUsersInfos($id){
     return $result;
 }
 
-function addUser ($lastname, $firstname, $pseudo, $email, $password){
+function addUser ($lastname, $firstname, $pseudo, $email, $password, $gender){
     $con = db_connect ();
-    $query = "INSERT INTO users (id, lastname, firstname, pseudo, email, password) VALUES ('null', '$lastname', '$firstname', '$pseudo', '$email', '$password')";
-    $con->query($query);
+    $stmt = $con->prepare ("INSERT INTO users (id, firstname, lastname, pseudo, email, password, gender) VALUES (:null, :value1, :value2, :value3, :value4, :value5, :value6)");
+    $stmt->bindParam(':value1', $firstname, PDO::FETCH_ASSOC);
+    $stmt->bindParam(':value2', $lastname, PDO::FETCH_ASSOC);
+    $stmt->bindParam(':value3', $pseudo, PDO::FETCH_ASSOC);
+    $stmt->bindParam(':value4', $email, PDO::FETCH_ASSOC);
+    $stmt->bindParam(':value5', $password, PDO::FETCH_ASSOC);
+    $stmt->bindParam(':value6', $gender, PDO::FETCH_ASSOC);
+    $stmt->execute();
 
+
+}
+
+function userConnect($email) {
+    $con = db_connect();
+    $query = "SELECT * FROM users
+    WHERE users.email = '$email'";
+    $stmt = $con->query($query);
+    $result = $stmt->fetch(PDO:: FETCH_ASSOC);
+    return $result;
 
 }
